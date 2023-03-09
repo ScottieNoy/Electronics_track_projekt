@@ -107,7 +107,7 @@ void loop() {
   // print the distance to the serial monitor
   // Serial.print("Distance: ");
   Serial.print(distance);
-  Serial.print(";");
+  Serial.println(";");
   // Serial.println(" cm");
   printToDisplay(g,distance);
   delay(500);
