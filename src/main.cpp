@@ -117,15 +117,15 @@ void printToDisplay(sensors_event_t g,int distance) {
   tft.fillScreen(TFT_BLACK);
   tft.setCursor(0, 0);
   tft.setTextColor(TFT_WHITE);
-  tft.setTextSize(2);
+  tft.setTextSize(1.5);
   tft.println("Rotation");
   tft.setTextColor(TFT_BLUE);
   tft.print("X:");
-  tft.print(g.orientation.roll);
+  tft.println(g.orientation.roll);
   // tft.println(" rad/s");
   tft.setTextColor(TFT_RED);
   tft.print("Y:");
-  tft.print(g.orientation.pitch);
+  tft.println(g.orientation.pitch);
   // tft.println(" rad/s");
   tft.setTextColor(TFT_GREEN);
   tft.print("Z:");
