@@ -129,7 +129,7 @@ void printToDisplay(sensors_event_t g,int distance) {
   // tft.println(" rad/s");
   tft.setTextColor(TFT_GREEN);
   tft.print("Z:");
-  tft.print(g.orientation.heading);
+  tft.println(g.orientation.heading);
   // tft.println(" rad/s");
   tft.setTextColor(TFT_YELLOW);
   tft.print("Dist:");
